@@ -6,6 +6,8 @@ In your xdebug (version 3 and up) settings in PHP, you can set `xdebug.start_wit
 
 This extension sets the cookie value to `1`, so it requires that you configure `xdebug.trigger_value` in PHP to be an empty value (which is its default).
 
+At the moment, this extension will only set cookies for domains in the `.test` TLD.
+
 ## Development
 
 To build the extension, run:
