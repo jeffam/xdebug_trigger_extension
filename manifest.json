@@ -1,0 +1,37 @@
+{
+  "manifest_version": 2,
+  "name": "XDEBUG_TRIGGER",
+  "version": "1.0",
+
+  "description": "Adds an XDEBUG_TRIGGER cookie to the current request.",
+
+  "icons": {
+    "48": "bug-48.png"
+  },
+
+  "permissions": [
+    "*://*.test/",
+    "activeTab",
+    "notifications",
+    "cookies"
+  ],
+
+  "browser_action": {
+    "browser_style": true,
+    "default_icon": "bug-48-inactive.png",
+    "default_title": "XDEBUG Trigger"
+  },
+
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "xdebug-trigger@ilr.cornell.edu"
+    }
+  }
+
+}

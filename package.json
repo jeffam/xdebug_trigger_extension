@@ -1,0 +1,16 @@
+{
+  "name": "xdebug_trigger_extension",
+  "version": "1.0.0",
+  "description": "``` $ zip -r -FS ../xdebug_trigger_extension.zip * --exclude '*.git*' ```",
+  "main": "background.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:firefox": "web-ext run --source-dir ./extension-dist/",
+    "build": "web-ext build"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "web-ext": "^6.1.0"
+  }
+}
